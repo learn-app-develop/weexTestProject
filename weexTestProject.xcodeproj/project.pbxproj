@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAA8D7A8446B7F9AB91EC563 /* libPods-weexTestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E3E32DD2B3E6F0BE4503 /* libPods-weexTestProject.a */; };
 		F96429291FC3146C00C6AB3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F96429281FC3146C00C6AB3A /* main.m */; };
 		F964292C1FC3146D00C6AB3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F964292B1FC3146D00C6AB3A /* AppDelegate.m */; };
 		F964292F1FC3146D00C6AB3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F964292E1FC3146D00C6AB3A /* ViewController.m */; };
 		F96429321FC3146D00C6AB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96429301FC3146D00C6AB3A /* Main.storyboard */; };
 		F96429341FC3146D00C6AB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96429331FC3146D00C6AB3A /* Assets.xcassets */; };
 		F96429371FC3146D00C6AB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96429351FC3146D00C6AB3A /* LaunchScreen.storyboard */; };
+		F9FC03BD1FC3C12600D2BBD5 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = F9FC03BB1FC3C12600D2BBD5 /* main.js */; };
+		F9FC03BE1FC3C12600D2BBD5 /* hello.js in Resources */ = {isa = PBXBuildFile; fileRef = F9FC03BC1FC3C12600D2BBD5 /* hello.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6879F6B2F165DA4AA786F87F /* Pods-weexTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weexTestProject/Pods-weexTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8B8A35CEDBAF00958D197C25 /* Pods-weexTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexTestProject/Pods-weexTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		D4D2E3E32DD2B3E6F0BE4503 /* libPods-weexTestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexTestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96429241FC3146C00C6AB3A /* weexTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weexTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96429281FC3146C00C6AB3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F964292A1FC3146D00C6AB3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		F96429331FC3146D00C6AB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F96429361FC3146D00C6AB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F96429381FC3146D00C6AB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FC03BB1FC3C12600D2BBD5 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		F9FC03BC1FC3C12600D2BBD5 /* hello.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA8D7A8446B7F9AB91EC563 /* libPods-weexTestProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E98566CBA01084DE9CFE564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2E3E32DD2B3E6F0BE4503 /* libPods-weexTestProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D57E93FB4AA61F8C38698C33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6879F6B2F165DA4AA786F87F /* Pods-weexTestProject.debug.xcconfig */,
+				8B8A35CEDBAF00958D197C25 /* Pods-weexTestProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F964291B1FC3146C00C6AB3A = {
 			isa = PBXGroup;
 			children = (
 				F96429261FC3146C00C6AB3A /* weexTestProject */,
 				F96429251FC3146C00C6AB3A /* Products */,
+				D57E93FB4AA61F8C38698C33 /* Pods */,
+				7E98566CBA01084DE9CFE564 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +86,7 @@
 		F96429261FC3146C00C6AB3A /* weexTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				F9FC03BA1FC3BD3C00D2BBD5 /* Resource */,
 				F964292A1FC3146D00C6AB3A /* AppDelegate.h */,
 				F964292B1FC3146D00C6AB3A /* AppDelegate.m */,
 				F964292D1FC3146D00C6AB3A /* ViewController.h */,
@@ -79,6 +108,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F9FC03BA1FC3BD3C00D2BBD5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC03BB1FC3C12600D2BBD5 /* main.js */,
+				F9FC03BC1FC3C12600D2BBD5 /* hello.js */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F964293B1FC3146D00C6AB3A /* Build configuration list for PBXNativeTarget "weexTestProject" */;
 			buildPhases = (
+				61EA6D82720EAA7A96AF928D /* [CP] Check Pods Manifest.lock */,
 				F96429201FC3146C00C6AB3A /* Sources */,
 				F96429211FC3146C00C6AB3A /* Frameworks */,
 				F96429221FC3146C00C6AB3A /* Resources */,
+				D39C0B462B4F883F4800A5C0 /* [CP] Embed Pods Frameworks */,
+				DC8393BF6189BF5D6FC7ABD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +178,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				F96429371FC3146D00C6AB3A /* LaunchScreen.storyboard in Resources */,
+				F9FC03BE1FC3C12600D2BBD5 /* hello.js in Resources */,
 				F96429341FC3146D00C6AB3A /* Assets.xcassets in Resources */,
 				F96429321FC3146D00C6AB3A /* Main.storyboard in Resources */,
+				F9FC03BD1FC3C12600D2BBD5 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61EA6D82720EAA7A96AF928D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weexTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D39C0B462B4F883F4800A5C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weexTestProject/Pods-weexTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC8393BF6189BF5D6FC7ABD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-weexTestProject/Pods-weexTestProject-resources.sh",
+				"${PODS_ROOT}/../ios/sdk/WeexSDK/Resources/main.js",
+				"${PODS_ROOT}/../ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weexTestProject/Pods-weexTestProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F96429201FC3146C00C6AB3A /* Sources */ = {
@@ -263,6 +361,7 @@
 		};
 		F964293C1FC3146D00C6AB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6879F6B2F165DA4AA786F87F /* Pods-weexTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weexTestProject/Info.plist;
@@ -274,6 +373,7 @@
 		};
 		F964293D1FC3146D00C6AB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8A35CEDBAF00958D197C25 /* Pods-weexTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weexTestProject/Info.plist;
@@ -302,6 +402,7 @@
 				F964293D1FC3146D00C6AB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
